@@ -27,7 +27,7 @@ struct Tour
 };
 
 //Function Prototypes
-int searchCountryCode(string);
+int searchCountryCode(string code);
 GraphMatrix* readFileMakeMatrix();
 void printStringArray(string* arr, int size);
 
@@ -69,7 +69,13 @@ int main()
 */
 int searchCountryCode(string)
 {
-
+	for (int i = 0; i < SIZE; ++i) {
+		if COUNTRY_CODES[i] == code) {
+			return i;
+		}
+	}
+	//if code not found
+	return -1;
 }
 
 /*
